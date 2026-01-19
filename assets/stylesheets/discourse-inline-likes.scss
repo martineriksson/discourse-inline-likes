@@ -1,0 +1,25 @@
+// Inline likes display styles
+// This plugin restores the original inline "who liked" display
+
+// Ensure the who-liked list appears below the post controls
+.who-liked {
+  // Inherit base styles from core
+  // Additional margin to separate from post controls
+  margin-top: 0.5em;
+
+  // Ensure proper display when visible
+  &.--expanded {
+    min-height: 25px;
+  }
+}
+
+// Override the default double-button hover styles for our inline button
+// to match the original like button behavior
+.post-action-menu__double-button {
+  .discourse-no-touch & {
+    &:not(.has-liked):hover {
+      --d-post-control-background--hover: var(--love-low);
+      --d-button-flat-icon-color--hover: var(--love);
+    }
+  }
+}

@@ -1,0 +1,4 @@
+discourse_inline_likes:
+  discourse_inline_likes_enabled:
+    default: true
+    client: true

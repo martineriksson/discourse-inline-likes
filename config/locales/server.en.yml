@@ -1,0 +1,3 @@
+en:
+  site_settings:
+    discourse_inline_likes_enabled: "Enable the inline likes display (shows who liked a post below the post actions instead of in a dropdown menu)"
